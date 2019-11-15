@@ -1,0 +1,59 @@
+body{
+  background-color: lightgrey;
+  /*background-image: url("bilder-oscar/cmbyn.jpg");*/
+
+}
+
+h1{
+  text-align: center;
+}
+.filmgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.filmgrid img{
+  width: 100%;
+}
+
+@media (max-width: 1800px){
+  /*PC*/
+  .filmgrid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px){
+  /*Tablet*/
+  .filmgrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px){
+  /*Mobil*/
+  .filmgrid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/*
+@media (max-width: 1400px){
+  body{
+    background-color: yellow;
+  }
+}
+@media (max-width: 1000px){
+  body{
+    background-color: green;
+  }
+}
+@media (max-width: 800px){
+  body{
+    background-color: red;
+  }
+}
+@media (max-width: 600px){
+  body{
+    background-color: blue;
+  }
+} */
